@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Modal} from "reactstrap";
+import PlotImg from "../../../../../ec2-deploy-test-embedding/plot.png";
 // import * as Constants from '../../constant/application-properties';
 
 /**
@@ -22,7 +23,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={require(`../../../../../ec2-deploy-test-embedding/${props.title}_.png`)} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={PlotImg} alt=''/>
                 </div>
             </Modal>
         </div>
