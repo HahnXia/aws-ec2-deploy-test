@@ -10,6 +10,7 @@ import {Button, Modal} from "reactstrap";
 function TrendModal(props) {
     const [liveDemo,
         setLiveDemo] = React.useState(false);
+        const filename = props.filename.replace(' ', "_");
     return (
         <div>
             <Button color="primary" type="button" onClick={() => setLiveDemo(true)}>
@@ -22,7 +23,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={require(`../../assets/img/${props.title}_.png`)} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={require(`../../assets/img/${filename}_.png`)} alt=''/>
                 </div>
             </Modal>
         </div>
