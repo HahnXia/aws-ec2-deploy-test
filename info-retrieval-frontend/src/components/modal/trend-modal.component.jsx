@@ -22,7 +22,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={require(`~/ec2-deploy-test-embedding/${props.title}_.png`)} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={require(`../../../../../ec2-deploy-test-embedding/${props.title}_.png`)} alt=''/>
                 </div>
             </Modal>
         </div>
