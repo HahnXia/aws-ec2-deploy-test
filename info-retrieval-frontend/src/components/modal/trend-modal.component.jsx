@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Modal} from "reactstrap";
+import * as Constants from '../../constant/application-properties';
 
 /**
  * The TrendModal component is for showing the trend image for the query trend analysis in the embedding mode
@@ -21,7 +22,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={require('../../assets/img/trend_test.jpg')} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={require(`${Constants.TRENDING_IMG_URL}/${props.title}_.png`)} alt=''/>
                 </div>
             </Modal>
         </div>
