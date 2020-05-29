@@ -10,7 +10,7 @@ import {Button, Modal} from "reactstrap";
 function TrendModal(props) {
     const [liveDemo,
         setLiveDemo] = React.useState(false);
-        const filename = props.filename.replace(' ', "_");
+        const filename = props.filename === undefined ? 'plot' : props.filename.replace(' ', "_");
     return (
         <div>
             <Button color="primary" type="button" onClick={() => setLiveDemo(true)}>
