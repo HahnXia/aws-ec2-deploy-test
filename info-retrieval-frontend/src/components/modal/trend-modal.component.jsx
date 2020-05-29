@@ -26,7 +26,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={'https://covid19-python-backend-data.s3.us-east-2.amazonaws.com/plot.jpeg'} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={'https://covid19-python-backend-data.s3.us-east-2.amazonaws.com/plot.png'} alt=''/>
                 </div>
             </Modal>
         </div>
