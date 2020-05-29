@@ -22,7 +22,7 @@ function TrendModal(props) {
                     </h5>
                 </div>
                 <div className="modal-body">
-                    <img style={{maxWidth: '100%'}} src={require('../../assets/img/plot.png')} alt=''/>
+                    <img style={{maxWidth: '100%'}} src={require(`../../assets/img/${props.title}_.png`)} alt=''/>
                 </div>
             </Modal>
         </div>
