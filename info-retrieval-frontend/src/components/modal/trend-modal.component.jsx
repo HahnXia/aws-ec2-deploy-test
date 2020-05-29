@@ -12,7 +12,7 @@ function TrendModal(props) {
         setLiveDemo] = React.useState(false);
         let filename = 'plot';
         if(props.title !== undefined && props.title !== null) {
-            filename = props.title.replace(' ', "_");
+            filename = props.title.trim().split(' ').join("_");
         }
     return (
         <div>
