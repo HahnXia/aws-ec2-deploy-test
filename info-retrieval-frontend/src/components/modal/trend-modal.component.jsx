@@ -10,7 +10,6 @@ import {Button, Modal} from "reactstrap";
 function TrendModal(props) {
     const [liveDemo,
         setLiveDemo] = React.useState(false);
-        console.log(`${Constants.TRENDING_IMG_URL}/${props.title}_.png`);
     return (
         <div>
             <Button color="primary" type="button" onClick={() => setLiveDemo(true)}>
